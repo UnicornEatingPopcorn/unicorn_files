@@ -1,0 +1,151 @@
+/* Bootstrap variables */
+$link__color: #07C !default;
+$link__color--hover: darken($link__color, 20%) !default;
+$body__color: #212529 !default;
+$body__background: #ECECEC !default;
+$body__font-size: 1rem;
+$font-family--base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-headers: $font-family--base !default;
+
+/* Forms */
+$placeholder__color: #3E769E !default;
+$border-color: #E3E3E3 !default;
+
+/* Grid settings */
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1450px
+) !default;
+
+$grid-columns: 12 !default;
+$grid-gutter-width: 1.5rem !default;
+
+$xs: '(max-width: 375px)' !default;
+$sm: '(max-width: #{map-get($grid-breakpoints , sm) - 1px})' !default;
+$md: '(max-width: #{map-get($grid-breakpoints, md) - 1px})' !default;
+$lg: '(max-width: #{map-get($grid-breakpoints, lg) - 1px})' !default;
+$xl: '(max-width: #{map-get($grid-breakpoints, xl) - 1px})' !default;
+$xxl: '(max-width: #{map-get($grid-breakpoints, xxl) - 1px})' !default;
+
+$min-xs: '(min-width: 375px)';
+$min-sm: '(max-width: #{map-get($grid-breakpoints, sm)})' !default;
+$min-md: '(max-width: #{map-get($grid-breakpoints, md)})' !default;
+$min-lg: '(max-width: #{map-get($grid-breakpoints, lg)})' !default;
+$min-xl: '(max-width: #{map-get($grid-breakpoints, xl)})' !default;
+$min-xxl: '(max-width: #{map-get($grid-breakpoints, xxl)})' !default;
+
+/* Layouts */
+
+/* Home */
+$home__template-areas:
+  "topbar"
+  "m-navigation"
+  "climate-banner"
+  "m-search-box"
+  "featured-shops"
+  "headline"
+  "hero"
+  "content"
+  "footer" !default;
+
+$home__template-areas--ipad:
+  "topbar"
+  "m-navigation"
+  "climate-banner"
+  "m-search-box"
+  "featured-shops"
+  "headline"
+  "hero"
+  "content"
+  "footer" !default;
+
+$home__template-areas--mobile:
+  "topbar"
+  "m-navigation"
+  "climate-banner"
+  "m-search-box"
+  "featured-shops"
+  "headline"
+  "hero"
+  "content"
+  "footer" !default;
+
+/* Components */
+
+/* topbar */
+
+$topbar__height: 70px !important;
+$topbar__background: #001C4C !default;
+
+/* m-navigation */
+
+$m-nav__font-family: $font-family--base !default;
+$m-nav__bg: #031128 !default;
+$m-nav__justify: flex-start !default;
+$m-nav__align-items: center !default;
+$m-nav__height: 60px !default;
+$m-nav-link__color: #FFF !default;
+$m-nav-link__color--hover: #1BAFCD !default;
+$m-nav-link__font-weight: 700 !default;
+$m-nav-link__font-size: 14px;
+$m-nav-link__uppercase: true !default;
+
+$m-nav-subnav__border-top: 2px solid $m-nav-link__color--hover !default;
+$m-nav-subnav__background: rgba($m-nav__bg, 0.9) !default;
+$m-nav-subnav__color: #FFF !default;
+$m-nav-subnav__font-weight: 700 !default;
+$m-nav-subnav__font-size: 14px !default;
+$m-nav-subnav__uppercase: false !default;
+$m-nav-subnav__color--hover: $m-nav__bg !default;
+$m-nav-subnav__background--hover: $m-nav-link__color--hover !default;
+
+/* m-search-box */
+
+$m-search__background: $body__background !default;
+$m-search-placeholder__color: $placeholder__color !default;
+$m-search__border-color: $border-color !default;
+$m-search-input__font-size: 16px !default;
+$m-search-btn__color: $placeholder__color !default;
+$m-search-btn__background: $body__background !default;
+$m-search-btn__font-size: 17px !default;
+$m-search-btn__width: 32px !default;
+$m-search-btn__height: 32px !default;
+$m-search-btn__position: right !default;
+$m-search-btn__indent: 11px !default;
+
+$m-search-small-btn__font-size: 13px !default;
+$m-search-small-btn__color: $placeholder__color !default;
+$m-search-small-btn__background: $body__background !default;
+$m-search-small-btn__color--hover: $body__background !default;
+$m-search-small-btn__background--hover: $placeholder__color !default;
+$m-search-small__width: 200px !default;
+
+$m-search-popular__font-size: 14px !default;
+$m-search-popular__color: $body__color !default;
+$m-search-popular__justify: flex-start !default;
+$m-search-popular__uppercase: true !default;
+
+// Colors
+
+$color-blue: #0173B9 !default;
+
+//Coupon filter
+
+$coupon-filter__text-decoration: underline !default;
+$coupon-filter__text-align: right !default;
+$coupon-filter__mob-padding: 10px 0 !default;
+$coupon-filter--centered: center !default;
+$coupon-filter__list-item__margin: 5px !default;
+$coupon-filter__color: $color-blue;

@@ -1,0 +1,10 @@
+b7414813048893c86532723f57bbbab8|file:///Users/annaevlanova/Projects/app/app/themes/simple_2019_grid/assets/stylesheets/simple_2019_grid/base/coupons/coupon-type-filter.scss|6|1|v|scss
+	$coupon-filter__color: $color-blue;
+86099419b4cb9a1ca03080108e5001d0|file:///Users/annaevlanova/Projects/app/app/themes/simple_2019_grid/assets/stylesheets/simple_2019_grid/base/coupons/coupon-type-filter.scss|24|14|v|scss
+	$coupon-filter__color
+c2775ad25b19fe2ade5542b380986ad5|file:///Users/annaevlanova/Projects/app/app/themes/flat_2016_grid/views/custom/64/_custom_layout.html.erb|2|1|V|eruby
+	  <div class="col-6"></div>
+7ad965703b1917c1b1716ae6785698e1|file:///Users/annaevlanova/Projects/app/app/themes/flat_2016_grid/assets/stylesheets/flat_2016_grid/custom/64/index.scss|1|1|V|scss
+	@import 'theme';
+320b09c28d67be6610dc8c1570c8496f|file:///Users/annaevlanova/.config/nvim/init.vim|192|1|v|vim
+	Plug 'w0rp/ale'

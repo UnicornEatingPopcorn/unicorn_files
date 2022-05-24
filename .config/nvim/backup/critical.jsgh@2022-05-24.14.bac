@@ -1,0 +1,16 @@
+const Crittr = require('crittr');
+
+Crittr({
+    urls: ['http://127.0.0.1:8081/index.html'],
+    // css: './style.scss',
+    device: {
+        width: 1920,
+        height: 1080,
+    },
+})
+    .then(({ critical, rest }) => {
+        console.log(critical);
+    })
+    .catch(err => {
+        console.error(err);
+    });
