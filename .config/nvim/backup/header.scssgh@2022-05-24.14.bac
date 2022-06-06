@@ -1,6 +1,0 @@
-.th-header {
-  .col-xs-6:nth-child(odd) {
-    display: flex;
-    justify-content: end;
-  }
-}

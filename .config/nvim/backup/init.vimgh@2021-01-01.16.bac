@@ -32,7 +32,6 @@ Plug 'easymotion/vim-easymotion'
 
 
 Plug 'junegunn/vim-easy-align'
-let g:fzf_layout = { 'down': '40%' }
 " Plug 'ervandew/supertab'
 
 Plug 'tpope/vim-endwise'
@@ -189,6 +188,8 @@ Plug 'digitaltoad/vim-pug'
 
 Plug 'jsfaint/gen_tags.vim'
 let g:gen_tags#ctags_auto_gen = 1
+let g:pymode_python = 'python3'
+let g:syntastic_python_python_exec = 'python3'
 Plug 'w0rp/ale'
 let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 0

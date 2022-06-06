@@ -32,7 +32,6 @@ Plug 'easymotion/vim-easymotion'
 
 
 Plug 'junegunn/vim-easy-align'
-let g:fzf_layout = { 'down': '40%' }
 " Plug 'ervandew/supertab'
 
 Plug 'tpope/vim-endwise'

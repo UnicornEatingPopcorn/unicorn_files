@@ -1,0 +1,38 @@
+FROM php:7.4-fpm
+
+RUN apt-get update && apt-get install -y zlib1g-dev libicu-dev \
+    libzip-dev \
+    libfreetype6-dev \
+    libjpeg62-turbo-dev \
+    libmcrypt-dev \
+    libmagickwand-dev \
+    libmagickcore-dev \
+    libpng-dev \
+    libxslt1-dev \
+    zip unzip \
+    && docker-php-ext-install intl pdo_mysql bcmath xsl zip mysqli soap \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j$(nproc) gd
+
+
+
+
+#RUN docker-php-ext-configure intl
+#RUN docker-php-ext-install intl
+#RUN docker-php-ext-install xsl
+#RUN docker-php-ext-install soap
+
+# удаляем папку с конфигами по умолчанию для php-fpm
+RUN rm -rf /usr/local/etc/php-fpm.d
+# копируем конфиги из папки с проектов в контейнер
+COPY ./pools /usr/local/etc/php-fpm.d
+COPY ./php.ini /usr/local/etc/php/
+COPY ./php-fpm.conf /usr/local/etc/php-fpm.conf
+COPY ./docker-php-entrypoint /usr/local/bin/
+#RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+#ADD php.ini /usr/local/etc/php/conf.d/40-custom.ini
+
+#WORKDIR /var/www/search.avtoto.test
+ENTRYPOINT ["docker-php-entrypoint"]
+CMD ["php-fpm"]

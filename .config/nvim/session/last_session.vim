@@ -104,8 +104,6 @@ if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
 endif
 let &so = s:so_save | let &siso = s:siso_save
-let g:this_session = v:this_session
-let g:this_obsession = v:this_session
 doautoall SessionLoadPost
 unlet SessionLoad
 " vim: set ft=vim :
